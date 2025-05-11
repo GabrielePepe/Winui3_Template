@@ -9,46 +9,49 @@
     mc:Ignorable="d"
     Background="Transparent">
 
-    <StackPanel Grid.Row="1"
-                VerticalAlignment="Top"
-                Margin="16,16,16,0">
-        <dev:SettingsCard Description="Change the theme that appear in the application"
-                          Header="Choose your mode"
-                          VerticalAlignment="Top">
-            <dev:SettingsCard.HeaderIcon>
-                <FontIcon Glyph="&#xE790;"/>
-            </dev:SettingsCard.HeaderIcon>
-            <ComboBox dev:ThemeServiceAttach.ThemeService="{x:Bind ThemeServiceProxy}">
-                <ComboBoxItem Tag="Light">Light</ComboBoxItem>
-                <ComboBoxItem Tag="Dark">Dark</ComboBoxItem>
-                <ComboBoxItem Tag="Default">Use system setting</ComboBoxItem>
-            </ComboBox>
-        </dev:SettingsCard>
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  Margin="16,16,16,0">
+        <StackPanel VerticalAlignment="Top">
+            <dev:SettingsCard Description="Change the theme that appear in the application"
+                              Header="Choose your mode"
+                              VerticalAlignment="Top">
+                <dev:SettingsCard.HeaderIcon>
+                    <FontIcon Glyph="&#xE790;"/>
+                </dev:SettingsCard.HeaderIcon>
+                <ComboBox dev:ThemeServiceAttach.ThemeService="{x:Bind ThemeServiceProxy}">
+                    <ComboBoxItem Tag="Light">Light</ComboBoxItem>
+                    <ComboBoxItem Tag="Dark">Dark</ComboBoxItem>
+                    <ComboBoxItem Tag="Default">Use system setting</ComboBoxItem>
+                </ComboBox>
+            </dev:SettingsCard>
 
-        <dev:SettingsExpander Header="About"
-                              Margin="0,16,0,0">
-            <dev:SettingsExpander.HeaderIcon>
-                <FontIcon Glyph="&#xE946;" />
-            </dev:SettingsExpander.HeaderIcon>
-            <dev:SettingsExpander.Items>
-                <dev:SettingsCard Header="Version 1.0.0">
-                    <HyperlinkButton Content="Release Notes" NavigateUri="https://github.com/GabrielePepe/Winui3_Template/blob/master/README.md" />
-                </dev:SettingsCard>
-                <dev:SettingsCard Header="Gabriele Pepe"/>
-            </dev:SettingsExpander.Items>
-        </dev:SettingsExpander>
+            <dev:SettingsExpander Header="About"
+                                  Margin="0,16,0,0">
+                <dev:SettingsExpander.HeaderIcon>
+                    <FontIcon Glyph="&#xE946;" />
+                </dev:SettingsExpander.HeaderIcon>
+                <dev:SettingsExpander.Items>
+                    <dev:SettingsCard Header="Version 1.0.2">
+                        <HyperlinkButton Content="Release Notes"
+                                         NavigateUri="https://github.com/GabrielePepe/Winui3_Template/blob/master/README.md" />
+                    </dev:SettingsCard>
+                    <dev:SettingsCard Header="Gabriele Pepe"/>
+                </dev:SettingsExpander.Items>
+            </dev:SettingsExpander>
 
-        <dev:SettingsGroup Description="Make sure you click the button below and check out the app source code!"
-                           Header="Explore the code"
-                           Margin="0,16,0,0">
-            <dev:SettingsGroup.HeaderIcon>
-                <FontIcon Glyph="&#xE71B;" />
-            </dev:SettingsGroup.HeaderIcon>
-            <dev:SettingsGroup.Content>
-                <Button Content="View on GitHub"
-                        Style="{StaticResource AccentButtonStyle}" 
-                        Click="SourceCodeButtonClick"/>
-            </dev:SettingsGroup.Content>
-        </dev:SettingsGroup>
-    </StackPanel>
+            <dev:SettingsGroup Description="Make sure you click the button below and check out the app source code!"
+                               Header="Explore the code"
+                               Margin="0,16,0,0">
+                <dev:SettingsGroup.HeaderIcon>
+                    <FontIcon Glyph="&#xE71B;" />
+                </dev:SettingsGroup.HeaderIcon>
+                <dev:SettingsGroup.Content>
+                    <Button Content="View on GitHub"
+                            Style="{StaticResource AccentButtonStyle}" 
+                            Click="SourceCodeButtonClick"/>
+                </dev:SettingsGroup.Content>
+            </dev:SettingsGroup>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
