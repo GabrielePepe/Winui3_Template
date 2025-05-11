@@ -17,7 +17,7 @@ namespace Winui3_Template
 
         private async void SourceCodeButtonClick(object sender, RoutedEventArgs e)
         {
-            var uri = new Uri("http://www.microsoft.com");
+            var uri = new Uri("https://github.com/GabrielePepe/Winui3_Template");
             await Launcher.LaunchUriAsync(uri);
         }
     }

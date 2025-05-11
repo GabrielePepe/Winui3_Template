@@ -32,7 +32,7 @@
             </dev:SettingsExpander.HeaderIcon>
             <dev:SettingsExpander.Items>
                 <dev:SettingsCard Header="Version 1.0.0">
-                    <HyperlinkButton Content="Release Notes" NavigateUri="http://www.microsoft.com" />
+                    <HyperlinkButton Content="Release Notes" NavigateUri="https://github.com/GabrielePepe/Winui3_Template/blob/master/README.md" />
                 </dev:SettingsCard>
                 <dev:SettingsCard Header="Gabriele Pepe"/>
             </dev:SettingsExpander.Items>
