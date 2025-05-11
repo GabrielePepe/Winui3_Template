@@ -11,7 +11,7 @@
 
     <ScrollViewer VerticalScrollBarVisibility="Auto"
                   HorizontalScrollBarVisibility="Disabled"
-                  Margin="16,16,16,0">
+                  Padding="16,16,16,0">
         <StackPanel VerticalAlignment="Top">
             <dev:SettingsCard Description="Change the theme that appear in the application"
                               Header="Choose your mode"
@@ -32,7 +32,7 @@
                     <FontIcon Glyph="&#xE946;" />
                 </dev:SettingsExpander.HeaderIcon>
                 <dev:SettingsExpander.Items>
-                    <dev:SettingsCard Header="Version 1.0.2">
+                    <dev:SettingsCard Header="Version 1.0.0">
                         <HyperlinkButton Content="Release Notes"
                                          NavigateUri="https://github.com/GabrielePepe/Winui3_Template/blob/master/README.md" />
                     </dev:SettingsCard>
