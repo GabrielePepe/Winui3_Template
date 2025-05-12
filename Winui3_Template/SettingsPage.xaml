@@ -32,7 +32,7 @@
                     <FontIcon Glyph="&#xE946;" />
                 </dev:SettingsExpander.HeaderIcon>
                 <dev:SettingsExpander.Items>
-                    <dev:SettingsCard Header="Version 1.0.0">
+                    <dev:SettingsCard Header="Version 1.0.1">
                         <HyperlinkButton Content="Release Notes"
                                          NavigateUri="https://github.com/GabrielePepe/Winui3_Template/blob/master/README.md" />
                     </dev:SettingsCard>
@@ -42,7 +42,7 @@
 
             <dev:SettingsGroup Description="Make sure you click the button below and check out the app source code!"
                                Header="Explore the code"
-                               Margin="0,16,0,0">
+                               Margin="0,16,0,16">
                 <dev:SettingsGroup.HeaderIcon>
                     <FontIcon Glyph="&#xE71B;" />
                 </dev:SettingsGroup.HeaderIcon>
